@@ -33,9 +33,10 @@ input:focus{
     /*: abre uma pseudo classe*/
     width: 350px;
     height: 40px;
-    background-color: #D3EC3B;
+    background-color:#dfdfdf;
     transition: 1s;
-    animation: cor 5s infinite;   
+    animation: cor 5s infinite; 
+    
 }
 input::placeholder{
     text-align: center;
@@ -47,14 +48,13 @@ button{
     width: 200px;
     height: 40px;
     margin: 20px auto;
-    background: rgb(211,236,59);
-    background: linear-gradient(180deg, rgba(211,236,59,1) 0%, rgba(81,157,57,1) 100%);
+    background: #343440;
     border-radius: 10px;
     border-style: none;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     font-size: 20px;
-    color:white;
+    color:#ffc72c;
 }
 
 /*FIM EFEITOS CSS*/

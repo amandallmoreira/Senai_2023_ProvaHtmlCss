@@ -1,5 +1,5 @@
 #pagina{
-    background-color:#519D39;
+    background-color:#ffc72c;
 }
 #pagina{
     width: 100%;
@@ -11,13 +11,10 @@
 header, footer{
     width: 100%;
     height: 60px;
-    background-color:#519D39;
+    background-color:#343440;
     display: flex;
     justify-content: space-around;
     font-family: 'Open Sans', sans-serif;
-}
-#logo{
-    background-color: #519D39;
 }
 
 #home{

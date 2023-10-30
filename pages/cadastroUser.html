@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CatPlay-Página de Cadastro de Usuário</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../styles/geral.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../styles/login.css'>
+    <link rel='stylesheet' type='text/css' media='screen and (max-width : 768px)' href='../styles/@media.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div id="pagina">
+        <header>
+            <div id="logo">
+                <img src="../images/logoCatPlay.png" alt="logo HelpA" >
+            </div>
+            <nav id="opcoesPc">
+                <ul>
+                    <li><a href="../pages/home.html">Home</a></li>
+                    <li><a href="../pages/login.html">Faça seu cadastro</a></li>
+                    <li><a href="#">Loja Online</a></li>
+                    <li><a href="#">Contatos</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                    <li><a href="#">Sobre nós</a></li>
+
+                </ul>
+            </nav>
+
+            <!--MOBILE-->
+            <div id="menuMobile" onclick="abrirOpcoes()">
+                <img src="../images/menuIcon.svg" alt="icone">
+            </div>
+        </header>
+        <!--MENU MOBILE-->
+            <nav id="opcoesMobile">
+                <ul>
+                    <li><a href="../pages/home.html">Home</a></li>
+                    <li><a href="../pages/login.html">Faça seu cadastro</a></li>
+                    <li><a href="#">Loja Online</a></li>
+                    <li><a href="#">Contatos</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                    <li><a href="#">Sobre nós</a></li>
+
+                </ul>
+            </nav>
+         <!--FIM MENU MOBILE-->
+
+        <main>
+                       
+            <div id="formulario">
+                <h2>Cadastro de Usuário</h2>
+                <form method="POST">
+
+                    <!--FORMULARIO-->
+                    <lable><p>Nome:</p></lable>
+                     <input type="text" id="nome" name="nome" placeholder="Digite o seu nome aqui">
+
+                     <lable><p>Sobrenome:</p></lable>
+                     <input type="text" id="sobrenome" name="lastname" placeholder="Sobrenome">
+                     
+                     <lable><p>E-mail:</p></lable>
+                     <input type="email" id="email" name="e-mail" placeholder="E-mail">
+                   
+                     <lable><p>Senha:</p></lable>
+                     <input type="password" id="senha" name="senha" placeholder="Senha">
+                   
+                     <lable><p>Digite a senha novamente:</p></lable>
+                     <input type="password" id="senhanov" name="senhanov" placeholder="Senha">
+
+                     
+                    <label for=""><p>Nº de telefone:</p></label>
+                    <input type="tel" name="phone" value="telefone" placeholder="Telefone">
+
+                    <label for=""><p>Foto 3x4:</p></label>
+                    <input type="file" name="3x4pic" value="foto3x4">
+
+                    <div id="genero">
+                        <p>Gênero:</p>
+                       
+                            <input type="radio" name="gender" value="Masculino" checked>Masculino
+
+                            <input type="radio" name="gender" value="Feminino">Feminino
+
+                            <input type="radio" name="gender" value="Outro">Outro
+
+                    </div>
+                    
+                    <label for=""><p>Data de nascimento</p></label>
+                    <input type="date" name="date" value="date" >
+                    
+                    <label for="estado"><p>Estado de nascimento:</p></label>
+                    
+                    <select name="Naturalidade">
+                        <option value="Acre">Acre (AC)</option>
+                        <option value="Alagoas">Alagoas(AL)</option>
+                        <option value="Amapá">Amapá(AP)</option>
+                        <option value="Amazonas">Amazonas</option>
+                        <option value="Bahia">Bahia(BA)</option>
+                        <option value="Ceará">Ceará(CE)</option>
+                        <option value="Distrito Federal">Distrito Federal(DF)</option>
+                        <option value="Espírito Santo">Espírito Santo (ES)</option>
+                        <option value="Goiás">Goiás(GO)</option>
+                        <option value="Maranhão">Maranhão(MA)</option>
+                        <option value="Mato Grosso">Mato Grosso(MT)</option>
+                        <option value="Mato Grosso do Sul">Mato Grosso do Sul(MS)</option>
+                        <option value="Minas Gerais">Minas Gerais(MG)</option>
+                        <option value="Pará">Pará(PA)</option>
+                        <option value="Paraíba">Paraíba(PB)</option>
+                        <option value="Paraná">Paraná(PR)</option>
+                        <option value="Pernambuco">Pernambuco(PE)</option>
+                        <option value="Piauí">Piauí(PI)</option>
+                        <option value="Rio de Janeiro">Rio de Janeiro(RJ)</option>
+                        <option value="Rio Grande do Norte">Rio Grande do Norte(RN)</option>
+                        <option value="Rio Grande do Sul">Rio Grande do Sul(RS)</option>
+                        <option value="Rondônia (RO)">Rondônia(RO)</option>
+                        <option value="Roraima">Roraima(RR)</option>
+                        <option value="Santa Catarina">Santa Catarina</option>
+                        <option value="São Paulo">São Paulo(SP)</option>
+                        <option value="Sergipe">Sergipe(SE)</option>
+                        <option value="Tocantins">Tocantins(TO)</option>
+                    </select>
+                    <br>
+                    <form>
+                
+                    <!--fim FORMULARIO-->
+
+                    <button type="submit" onclick="verifprest()">Enviar</button>
+                </form>
+            </div>    
+        </main>
+        <footer>
+            <p>Cat Play - Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <!--JAVASCRIPT-->
+    <script>
+        function abrirOpcoes(){
+            if (opcoesMobile.style.display=='none'){
+                opcoesMobile.style.display='flex'
+                //Se o menu mobile estiver escondido então mostrar o Icone;/ = atribuição, ==comparação
+            }else{
+                opcoesMobile.style.display='none'
+                //Caso contrário não mostre o Icone.
+            }
+        }
+        function verifprest(){
+            var txtnome = document.getElementById('nome')
+            var txtsenha = document.getElementById('senha')
+
+            if(txtnome.value.length == 0 && txtsenha.value.length == 0){
+                alert(`[ERRO] Verifique os dados e tente novamente.`)
+            }
+            else{
+                alert('Parabéns os dados estão corretos.')
+                document.write(`CNPJ: ${txtnome.value} <br> SENHA: ${txtsenha.value}`)
+            }
+        }       
+
+    </script>
+</body>
+</html>
