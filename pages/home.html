@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>HelpA - Home</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../styles/geral.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../styles/home.css'>
+
+    <link rel='stylesheet' type='text/css' media='screen and (max-width : 768px)' href='../styles/@media.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div id="pagina">
+        <header>
+            <div id="logo">
+                <img src="../images/logoBranca 1.png" alt="logo HelpA" >
+            </div>
+            <nav id="opcoesPc">
+                <ul>
+                    <li><a href="../pages/home.html">Home</a></li>
+                    <li><a href="#">Planos</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Contatos</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+
+                </ul>
+            </nav>
+
+            <!--MOBILE-->
+            <div id="menuMobile" onclick="abrirOpcoes()">
+                <img src="../images/menuIcon.svg" alt="icone">
+            </div>
+        </header>
+        <!--MENU MOBILE-->
+            <nav id="opcoesMobile">
+                <ul>
+                    <li><a href="../pages/home.html">Home</a></li>
+                    <li><a href="#">Planos</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Contatos</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+
+                </ul>
+            </nav>
+         <!--FIM MENU MOBILE-->
+
+        <main id="home">
+                       
+            <div id="opcao">
+                <button class="botao" type="submit"><a class="clique" href="loginPrestador.html">Sou prestador de serviços</a></button>
+
+                <button class="botao" type="submit"><a class="clique" href="../index.html">Sou usuário</a></button>
+            </div>    
+        </main>
+        <footer>
+            <p>HelpA - Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <!--JAVASCRIPT-->
+    <script>
+        function abrirOpcoes(){
+            if (opcoesMobile.style.display=='none'){
+                opcoesMobile.style.display='flex'
+                //Se o menu mobile estiver escondido então mostrar o Icone;/ = atribuição, ==comparação
+            }else{
+                opcoesMobile.style.display='none'
+                //Caso contrário não mostre o Icone.
+            }
+        }
+        
+
+    </script>
+</body>
+</html>
+    

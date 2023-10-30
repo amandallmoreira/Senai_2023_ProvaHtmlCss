@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>HelpA - Login Usuário</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/geral.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/login.css'>
+    <link rel='stylesheet' type='text/css' media='screen and (max-width : 768px)' href='styles/@media.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div id="pagina">
+        <header>
+            <div id="logo">
+                <img src="images/IMG-20231017-WA0007.jpg" alt="logo HelpA" >
+            </div>
+            <nav id="opcoesPc">
+                <ul>
+                    <li><a href="pages/home.html">Home</a></li>
+                    <li><a href="#">Planos</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Contatos</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                </ul>
+            </nav>
+            <!--MOBILE-->
+            <div id="menuMobile" onclick="abrirOpcoes()">
+                <img src="images/menuIcon.svg" alt="icone">
+            </div>
+        </header>
+        <!--MENU MOBILE-->
+            <nav id="opcoesMobile">
+                <ul>
+                    <li><a href="pages/home.html">Home</a></li>
+                    <li><a href="#">Planos</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Contatos</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                </ul>
+            </nav>
+         <!--FIM MENU MOBILE-->
+         <main>
+            <div id="formulario">
+                <h2>Login usuário</h2>
+                <form>
+                    <label for="nome">Digite o nome do usuário:</label>
+                    <input type="text" id="nome" placeholder="Usuário">
+
+                    <label for="senha">Digite sua senha:</label>
+                    <input type="password" id="senha" placeholder="Digite aqui">
+
+                    <p>Esqueci minha senha! <a class="clique" href="pages/novaSenha.html">Clique aqui!</a></p> 
+                    <p>Não possuo cadastro!
+                    <a class="clique"  href="pages/novoCadastro.html">Fazer cadastro.</a> </p>
+                    
+                    <button type="submit" onclick="varifUser()">Enviar</button>
+                </form>
+            </div>  
+        </main>      
+       
+        <footer>
+            <p>HelpA - Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <!--JAVASCRIPT-->
+    <script>
+        function abrirOpcoes(){
+            if (opcoesMobile.style.display=='none'){
+                opcoesMobile.style.display='flex'
+                //Se o menu mobile estiver escondido então mostrar o Icone;/ = atribuição, ==comparação
+            }else{
+                opcoesMobile.style.display='none'
+                //Caso contrário não mostre o Icone.
+            }
+        }
+        function varifUser(){
+            var txtnome = document.getElementById('nome')
+            var txtsenha = document.getElementById('senha')
+
+            if(txtnome.value.length == 0 && txtsenha.value.length == 0){
+                alert(`[ERRO] Verifique os dados e tente novamente.`)
+            }
+            else{
+                alert('Parabéns os dados estão corretos.')
+                document.write(`USUÁRIO: ${txtnome.value} <br> SENHA: ${txtsenha.value}`)
+            }
+        }
+        
+
+    </script>
+</body>
+</html>

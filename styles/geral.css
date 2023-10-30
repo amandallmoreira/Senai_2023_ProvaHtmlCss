@@ -1,0 +1,127 @@
+
+/*FONTE*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+}
+#pagina{
+    width: 100%;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif  
+}
+header, footer{
+    width: 100%;
+    height: 60px;
+    background-color:#519D39;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Open Sans', sans-serif;
+}
+main{
+    width: 80%;
+    padding: 20px ;
+    margin: 20px 0px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid gray;
+    border-radius: 20px;
+}
+
+footer{
+    align-items: center;
+    font-size: 15px;
+    color:white;
+}
+#logo{
+    height: 100%;
+}
+#logo img{
+    height: 100%;
+    width: 100%;
+}
+nav, ul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none; 
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif; 
+    color:white;
+}   
+main img{
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/*RESPONSIVIDADE MOBILE*/
+#menuMobile{
+    display: none;
+}
+
+@media print {
+    main{
+        color:rgb(255, 0, 0);
+    }
+    
+}
+#opcoesMobile{
+    width: 100%;
+    padding: 20px 0px;
+    background-color: black;
+    display: none;
+    flex-direction: column;
+}
+
+#opcoesMobile ul{
+    width: 80%;
+    flex-direction: column;
+}
+
+#opcoesMobile ul li{
+    width: 100%;
+    height: 30px;
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#opcoesMobile ul li :hover{
+    background-color: #d4ec3b85;
+    border-radius: 15px;
+    transition: 0,5s;
+}
+
+/*FIM RESPONSIVIDADE MOBILE*/
+h2{
+    color:#595959;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+  
+button:active{
+    background-color: rgb(201, 200, 200);
+    color: red;
+}
+
+button:hover{
+    width: 250px;
+    height: 50px;
+    background-color: #519D39;
+    font-weight: bold;
+    transition: 0,5s;
+}

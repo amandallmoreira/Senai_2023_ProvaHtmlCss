@@ -1,0 +1,61 @@
+#formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15pt;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+}
+input{
+    width: 320px;
+    height: 30px;
+    border-radius: 30px;
+    padding: 5px;
+    background: rgb(148,148,148);
+    border: inset; 
+}
+.clique{
+    color:rgb(105, 105, 105);
+}
+
+/*EFEITOS CSS*/
+input:hover{
+    transition: 0,5s;
+    background: linear-gradient(180deg, rgba(148,148,148,0.44729344729344733) 0%, rgba(255,255,255,1) 100%);
+}
+input:focus{
+    /*: abre uma pseudo classe*/
+    width: 350px;
+    height: 40px;
+    background-color: #D3EC3B;
+    transition: 1s;
+    animation: cor 5s infinite;   
+}
+input::placeholder{
+    text-align: center;
+    color:rgb(105, 105, 105);
+    font-size: 20px;  
+    font-weight: bold;
+}
+button{
+    width: 200px;
+    height: 40px;
+    margin: 20px auto;
+    background: rgb(211,236,59);
+    background: linear-gradient(180deg, rgba(211,236,59,1) 0%, rgba(81,157,57,1) 100%);
+    border-radius: 10px;
+    border-style: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color:white;
+}
+
+/*FIM EFEITOS CSS*/
+
