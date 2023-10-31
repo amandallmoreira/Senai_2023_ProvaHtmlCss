@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>CatPlay-Página de Cadastro de Usuário</title>
+    <title>CatPlay - Cadastro de Usuário</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='../styles/geral.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../styles/login.css'>
@@ -19,12 +19,11 @@
             <nav id="opcoesPc">
                 <ul>
                     <li><a href="../pages/home.html">Home</a></li>
-                    <li><a href="../pages/login.html">Faça seu cadastro</a></li>
+                    <li><a href="../pages/cadastroUser.html">Faça seu cadastro</a></li>
                     <li><a href="#">Loja Online</a></li>
-                    <li><a href="#">Contatos</a></li>
+                    <li><a href="../index.html">Login</a></li>
                     <li><a href="#">Fale Conosco</a></li>
                     <li><a href="#">Sobre nós</a></li>
-
                 </ul>
             </nav>
 
@@ -37,12 +36,11 @@
             <nav id="opcoesMobile">
                 <ul>
                     <li><a href="../pages/home.html">Home</a></li>
-                    <li><a href="../pages/login.html">Faça seu cadastro</a></li>
+                    <li><a href="../pages/cadastroUser.html">Faça seu cadastro</a></li>
                     <li><a href="#">Loja Online</a></li>
-                    <li><a href="#">Contatos</a></li>
+                    <li><a href="../index.html">Login</a></li>
                     <li><a href="#">Fale Conosco</a></li>
                     <li><a href="#">Sobre nós</a></li>
-
                 </ul>
             </nav>
          <!--FIM MENU MOBILE-->
@@ -69,30 +67,17 @@
                      <lable><p>Digite a senha novamente:</p></lable>
                      <input type="password" id="senhanov" name="senhanov" placeholder="Senha">
 
-                     
-                    <label for=""><p>Nº de telefone:</p></label>
+                    <label><p>Nº de telefone:</p></label>
                     <input type="tel" name="phone" value="telefone" placeholder="Telefone">
 
-                    <label for=""><p>Foto 3x4:</p></label>
-                    <input type="file" name="3x4pic" value="foto3x4">
+                    <label for="endereco"><p>Endereço:</p></label>
+                    <input type="text" name="address" value="endereco" placeholder="Endereço">
 
-                    <div id="genero">
-                        <p>Gênero:</p>
-                       
-                            <input type="radio" name="gender" value="Masculino" checked>Masculino
+                    <label for="CEP"><p>CEP</p></label>
+                    <input type="number" name="zipCode" value="cep" placeholder="CEP">
 
-                            <input type="radio" name="gender" value="Feminino">Feminino
-
-                            <input type="radio" name="gender" value="Outro">Outro
-
-                    </div>
-                    
-                    <label for=""><p>Data de nascimento</p></label>
-                    <input type="date" name="date" value="date" >
-                    
-                    <label for="estado"><p>Estado de nascimento:</p></label>
-                    
-                    <select name="Naturalidade">
+                    <label for="estado"><p>Estado onde mora:</p></label>
+                    <select name="localMoradia">
                         <option value="Acre">Acre (AC)</option>
                         <option value="Alagoas">Alagoas(AL)</option>
                         <option value="Amapá">Amapá(AP)</option>
@@ -121,12 +106,27 @@
                         <option value="Sergipe">Sergipe(SE)</option>
                         <option value="Tocantins">Tocantins(TO)</option>
                     </select>
-                    <br>
-                    <form>
-                
+
+                    <div id="genero">
+                        <p>Gênero:</p>
+                       
+                            <input type="radio" name="gender" value="Masculino" checked>Masculino
+
+                            <input type="radio" name="gender" value="Feminino">Feminino
+
+                            <input type="radio" name="gender" value="Outro">Outro
+
+                    </div>
+                    
+                    <label for="date"><p>Data de nascimento</p></label>
+                    <input type="date" name="date" value="date" >
                     <!--fim FORMULARIO-->
 
+
+                  <!--BOTÃO-->      
                     <button type="submit" onclick="verifprest()">Enviar</button>
+                 <!--Fim BOTAÕ-->       
+                
                 </form>
             </div>    
         </main>
@@ -140,25 +140,13 @@
         function abrirOpcoes(){
             if (opcoesMobile.style.display=='none'){
                 opcoesMobile.style.display='flex'
-                //Se o menu mobile estiver escondido então mostrar o Icone;/ = atribuição, ==comparação
+              
             }else{
                 opcoesMobile.style.display='none'
-                //Caso contrário não mostre o Icone.
+               
             }
         }
-        function verifprest(){
-            var txtnome = document.getElementById('nome')
-            var txtsenha = document.getElementById('senha')
-
-            if(txtnome.value.length == 0 && txtsenha.value.length == 0){
-                alert(`[ERRO] Verifique os dados e tente novamente.`)
-            }
-            else{
-                alert('Parabéns os dados estão corretos.')
-                document.write(`CNPJ: ${txtnome.value} <br> SENHA: ${txtsenha.value}`)
-            }
-        }       
-
+      
     </script>
 </body>
 </html>
