@@ -61,6 +61,12 @@ select{
     border: inset; 
 }
 
+option{
+    text-align: center;
+    font-size: 15pt;
+
+}
+
 /*EFEITOS CSS*/
 input:hover{
     transition: 0,5s;
