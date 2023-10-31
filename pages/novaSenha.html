@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CatPlay-Login Usuário</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../styles/geral.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../styles/login.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../styles/novaSenha.css'>
+    <link rel='stylesheet' type='text/css' media='screen and (max-width : 768px)' href='../styles/@media.css'>    <!--RESPONSIVIDADE-->
+    <script src='main.js'></script>
+</head>
+<body>
+    <div id="pagina">
+        <header>
+            <div id="logo">
+                <img src="../images/logoCatPlay.png" alt="logo CatPlay" >
+            </div>
+            <nav id="opcoesPc">
+                <ul>
+                    <li><a href="../pages/home.html">Home</a></li>
+                    <li><a href="../pages/cadastroUser.html">Cadastre-se</a></li>
+                    <li><a href="#">Loja Online</a></li>
+                    <li><a href="../index.html">Login</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                    <li><a href="#">Sobre nós</a></li>
+                </ul>
+            </nav>
+            <!--MOBILE-->
+            <div id="menuMobile" onclick="abrirOpcoes()">
+                <img src="../images/menuIcon.svg" alt="icone">
+            </div>
+        </header>
+        <!--MENU MOBILE-->
+            <nav id="opcoesMobile">
+                <ul>
+                    <li><a href="../pages/home.html">Home</a></li>
+                    <li><a href="../pages/cadastroUser.html">Cadastre-se</a></li>
+                    <li><a href="#">Loja Online</a></li>
+                    <li><a href="../index.html">Login</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                    <li><a href="#">Sobre nós</a></li>
+                </ul>
+            </nav>
+         <!--FIM MENU MOBILE-->
+
+         <main>
+            <div id="novaSenha">
+                <h2>Redefinir Senha:</h2>
+                <h3>Digite a nova senha abaixo:</h3>
+                <div id="redefinirSenha">
+                    <input type="password" placeholder="Nova senha">
+                    <input type="password" placeholder="Nova senha">
+                </div>
+                
+            </div>    
+            
+              <!--BOTÃO-->      
+              <button type="submit" onclick="verifprest()"><p>Redefinir</p>
+              </button>
+           <!--Fim BOTÃO--> 
+         </main>
+
+         
+
+           
+         <footer>
+            <p>CatPlay - Todos os direitos reservados.</p>
+         </footer>
+
+
+    </div>
+        
+
+     <!--JAVASCRIPT-->
+    <script>
+        function abrirOpcoes(){
+            if (opcoesMobile.style.display=='none'){
+                opcoesMobile.style.display='flex'
+                //Se o menu mobile estiver escondido então mostrar o Icone;/ = atribuição, ==comparação
+            }else{
+                opcoesMobile.style.display='none'
+                //Caso contrário não mostre o Icone.
+            }
+        }
+   
+    </script>
+</body>
+</html>

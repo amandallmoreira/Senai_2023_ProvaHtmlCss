@@ -7,7 +7,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='styles/geral.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='styles/login.css'>
-    <link rel='stylesheet' type='text/css' media='screen and (max-width : 768px)' href='styles/@media.css'>
+    <link rel='stylesheet' type='text/css' media='screen and (max-width : 768px)' href='styles/@media.css'>    <!--RESPONSIVIDADE-->
     <script src='main.js'></script>
 </head>
 <body>
@@ -19,7 +19,7 @@
             <nav id="opcoesPc">
                 <ul>
                     <li><a href="pages/home.html">Home</a></li>
-                    <li><a href="pages/cadastroUser.html">Faça seu cadastro</a></li>
+                    <li><a href="pages/cadastroUser.html">Cadastre-se</a></li>
                     <li><a href="#">Loja Online</a></li>
                     <li><a href="index.html">Login</a></li>
                     <li><a href="#">Fale Conosco</a></li>
@@ -35,7 +35,7 @@
             <nav id="opcoesMobile">
                 <ul>
                     <li><a href="pages/home.html">Home</a></li>
-                    <li><a href="pages/cadastroUser.html">Faça seu cadastro</a></li>
+                    <li><a href="pages/cadastroUser.html">Cadastre-se</a></li>
                     <li><a href="#">Loja Online</a></li>
                     <li><a href="index.html">Login</a></li>
                     <li><a href="#">Fale Conosco</a></li>
@@ -55,9 +55,9 @@
 
                     <p>Esqueci minha senha! <a class="clique" href="pages/novaSenha.html">Clique aqui!</a></p> 
                     <p>Não possuo cadastro!
-                    <a class="clique"  href="pages/novoCadastro.html">Fazer cadastro.</a> </p>
+                    <a class="clique"  href="pages/cadastroUser.html">Fazer cadastro.</a> </p>
                     
-                    <button type="submit" onclick="varifUser()">Enviar</button>
+                    <button type="submit"><p> Enviar</p></button>
                 </form>
             </div>  
         </main>      
@@ -78,20 +78,7 @@
                 //Caso contrário não mostre o Icone.
             }
         }
-        function varifUser(){
-            var txtnome = document.getElementById('nome')
-            var txtsenha = document.getElementById('senha')
-
-            if(txtnome.value.length == 0 && txtsenha.value.length == 0){
-                alert(`[ERRO] Verifique os dados e tente novamente.`)
-            }
-            else{
-                alert('Parabéns os dados estão corretos.')
-                document.write(`USUÁRIO: ${txtnome.value} <br> SENHA: ${txtsenha.value}`)
-            }
-        }
-        
-
+   
     </script>
 </body>
 </html>

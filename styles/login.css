@@ -23,6 +23,42 @@ input{
 .clique{
     color:rgb(105, 105, 105);
 }
+#genero{
+    width: 350px;
+    height: 100px;
+    display: flex;
+    padding: 20px;
+    border-style: inset;
+    border-radius: 20px;
+
+}
+
+#esquerda, #direita{
+    width: 50%;
+    height: 100%;
+}
+
+#esquerda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align:center;
+    background-color: pink;
+}
+
+#direita{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    text-align:;
+
+
+}
+#titulo{
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 25px;
+}
 
 /*EFEITOS CSS*/
 input:hover{

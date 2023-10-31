@@ -7,7 +7,8 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='../styles/geral.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../styles/login.css'>
-    <link rel='stylesheet' type='text/css' media='screen and (max-width : 768px)' href='../styles/@media.css'>
+
+    <link rel='stylesheet' type='text/css' media='screen and (max-width : 768px)' href='../styles/@media.css'>     <!--RESPONSIVIDADE-->
     <script src='main.js'></script>
 </head>
 <body>
@@ -19,7 +20,7 @@
             <nav id="opcoesPc">
                 <ul>
                     <li><a href="../pages/home.html">Home</a></li>
-                    <li><a href="../pages/cadastroUser.html">Faça seu cadastro</a></li>
+                    <li><a href="../pages/cadastroUser.html">Cadastre-se</a></li>
                     <li><a href="#">Loja Online</a></li>
                     <li><a href="../index.html">Login</a></li>
                     <li><a href="#">Fale Conosco</a></li>
@@ -36,7 +37,7 @@
             <nav id="opcoesMobile">
                 <ul>
                     <li><a href="../pages/home.html">Home</a></li>
-                    <li><a href="../pages/cadastroUser.html">Faça seu cadastro</a></li>
+                    <li><a href="../pages/cadastroUser.html">Cadastre-se</a></li>
                     <li><a href="#">Loja Online</a></li>
                     <li><a href="../index.html">Login</a></li>
                     <li><a href="#">Fale Conosco</a></li>
@@ -52,29 +53,29 @@
                 <form method="POST">
 
                     <!--FORMULARIO-->
-                    <lable><p>Nome:</p></lable>
+                    <label for="nome"><p>Nome:</p></label>
                      <input type="text" id="nome" name="nome" placeholder="Digite o seu nome aqui">
 
-                     <lable><p>Sobrenome:</p></lable>
+                     <label for="sobrenome"><p>Sobrenome:</p></label>
                      <input type="text" id="sobrenome" name="lastname" placeholder="Sobrenome">
                      
-                     <lable><p>E-mail:</p></lable>
+                     <label for="email"><p>E-mail:</p></label>
                      <input type="email" id="email" name="e-mail" placeholder="E-mail">
                    
-                     <lable><p>Senha:</p></lable>
+                     <label for="senha"><p>Senha:</p></label>
                      <input type="password" id="senha" name="senha" placeholder="Senha">
                    
-                     <lable><p>Digite a senha novamente:</p></lable>
-                     <input type="password" id="senhanov" name="senhanov" placeholder="Senha">
+                     <label for="senhanov"><p>Digite a senha novamente:</p></label>
+                     <input type="password" id="senhanov" name="senhanov" placeholder="Digite a senha novamente">
 
-                    <label><p>Nº de telefone:</p></label>
-                    <input type="tel" name="phone" value="telefone" placeholder="Telefone">
+                    <label for="name"><p>Nº de telefone:</p></label>
+                    <input type="tel" id="name" name="phone" placeholder="Telefone principal">
 
                     <label for="endereco"><p>Endereço:</p></label>
-                    <input type="text" name="address" value="endereco" placeholder="Endereço">
+                    <input type="text" id="endereco" name="address" placeholder="Endereço">
 
                     <label for="CEP"><p>CEP</p></label>
-                    <input type="number" name="zipCode" value="cep" placeholder="CEP">
+                    <input type="number" name="zipCode" value="cep" id="CEP" placeholder="CEP">
 
                     <label for="estado"><p>Estado onde mora:</p></label>
                     <select name="localMoradia">
@@ -107,25 +108,38 @@
                         <option value="Tocantins">Tocantins(TO)</option>
                     </select>
 
+                    <label for="genero" id="titulo"><p>Gênero:</p></label>
+                  
                     <div id="genero">
-                        <p>Gênero:</p>
+                        <div id="esquerda">
+                            <p>Masculino</p>
+                            <p>Feminino</p>
+                            <p>Outro</p>
+
+                        </div>
+                        <div id="direita">
+                            <input type="radio" name="gender" value="Masculino" checked> 
+                        
+                            <input type="radio" name="gender" value="Feminino">
                        
-                            <input type="radio" name="gender" value="Masculino" checked>Masculino
-
-                            <input type="radio" name="gender" value="Feminino">Feminino
-
-                            <input type="radio" name="gender" value="Outro">Outro
+            
+                            <input type="radio" name="gender" value="Outro">
 
                     </div>
-                    
+                        
+                        
+                        
+                   </div>
+                       
                     <label for="date"><p>Data de nascimento</p></label>
-                    <input type="date" name="date" value="date" >
+                    <input type="date" name="date" value="date" id="date">
                     <!--fim FORMULARIO-->
 
 
                   <!--BOTÃO-->      
-                    <button type="submit" onclick="verifprest()">Enviar</button>
-                 <!--Fim BOTAÕ-->       
+                    <button type="submit"><p>Enviar</p>
+                    </button>
+                 <!--Fim BOTÃO-->       
                 
                 </form>
             </div>    
