@@ -29,15 +29,12 @@ body{
 }
 main{
     width: 80%;
-    padding: 20px ;
-    margin: 20px 0px;  
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #ffc72c;
-   /* border: 2px solid gray;
-    border-radius: 20px;*/
+
 }
 
 footer{
@@ -67,11 +64,7 @@ a{
     font-family: 'Open Sans', sans-serif; 
     color: #ffc72c;
 }   
-main img{
-    width: 100%;
-    border-radius: 20px;
-    overflow: hidden;
-}
+
 
 /*RESPONSIVIDADE MOBILE*/
 #menuMobile{
@@ -116,6 +109,7 @@ main img{
 }
 
 /*FIM RESPONSIVIDADE MOBILE*/
+
 h2{
     color:#595959;
     margin: 50px 0;

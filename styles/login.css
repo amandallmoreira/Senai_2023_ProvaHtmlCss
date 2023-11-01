@@ -35,6 +35,7 @@ input{
 
 .caixa{
     width: 100%;
+    
 }
 
 .lado{
@@ -72,7 +73,7 @@ input:hover{
     transition: 0,5s;
     background: linear-gradient(180deg, rgba(148,148,148,0.44729344729344733) 0%, rgba(255,255,255,1) 100%);
 }
-input:focus{
+input:focus:not(.caixa){  /*:not(.caixa) -> elimina a classe caixa do efeito focus*/
     /*: abre uma pseudo classe*/
     width: 350px;
     height: 40px;
