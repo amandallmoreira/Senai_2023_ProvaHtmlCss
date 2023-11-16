@@ -5,54 +5,114 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>CatPlay - Home</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!--BOOTSTRAP LINK CDN via jsDelivr -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--fim link BOOTSTRAP LINK CDN via jsDelivr -->
+
     <link rel='stylesheet' type='text/css' media='screen' href='../styles/geral.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../styles/home.css'>
 
     <link rel='stylesheet' type='text/css' media='screen and (max-width : 768px)' href='../styles/@media.css'>
-    <script src='main.js'></script>
-</head>
+
+    
 <body>
     <div id="pagina">
         <header>
-            <div id="logo">
-                <img src="../images/logoCatPlay.png" alt="logo Cat Play" >
-            </div>
-            <nav id="opcoesPc">
-                <ul>
-                    <li><a href="../pages/home.html" target="_blank">Home</a></li>
-                    <li><a href="../pages/cadastroUser.html" target="_blank">Faça seu cadastro</a></li>
-                    <li><a href="#">Loja Online</a></li>
-                    <li><a href="../index.html" target="_blank">Login</a></li>
-                    <li><a href="#">Fale Conosco</a></li>
-                    <li><a href="#">Sobre nós</a></li>
+            <!-- MENU NAV -->
+            <nav class="navbar navbar-expand-md">
+                <!-- LOGO -->
+                    <div class="container-fluid d-flex justify-content-between">
+                      <a class="navbar-brand" href="#">
+                        <img src="../images/logoCatPlay.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                        CatPlay
+                      </a>
+                    </div>
+                <!--FIM LOGO -->
+                <div class="container-fluid">
+                 
+        
+                  <div class="collapse navbar-collapse color" id="navbarSupportedContent">
+                    <ul class="navbar-nav  d-flex justify-content-between">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../pages/home.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/loja.html">Loja</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Login</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/sobreNos.html">Sobre Nós</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/faleConosco.html">Fale Conosco</a>
+                      </li>
+                    </ul>
+                    <!-- <form class="d-flex" role="search">
+                      <input class="form-control m-2 d-flex justify-content-between" type="search" placeholder="Pesquisar" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                    </form> -->
+                  </div>
+                </div>
+              </nav>
+               <!-- FIM MENU NAV -->
 
-                </ul>
-            </nav>
 
             <!--MOBILE-->
             <div id="menuMobile" onclick="abrirOpcoes()">
                 <img src="../images/menuIcon.svg" alt="icone">
             </div>
         </header>
-        <!--MENU MOBILE-->
-            <nav id="opcoesMobile">
-                <ul>
-                    <li><a href="../pages/home.html" target="_blank">Home</a></li>
-                    <li><a href="../pages/cadastroUser.html" target="_blank">Faça seu cadastro</a></li>
-                    <li><a href="#">Loja Online</a></li>
-                    <li><a href="../index.html" target="_blank">Login</a></li>
-                    <li><a href="#">Fale Conosco</a></li>
-                    <li><a href="#">Sobre nós</a></li>
-
-                </ul>
-            </nav>
-         <!--FIM MENU MOBILE-->
+       
 
         <main id="home">
 
-            <div id="banner">
-                
-            </div>
+            <!-- BANNER CARROUSEL AUTOPLAYING -->
+            <section id="bannerCarrousel" class="container-fluid mx-0 my-2 p-0">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../images/Mobile.png" class="d-md-none w-100" alt=""><!--CELULAR-->
+                                <img src="../images/Tablet - 1.png" class="img-fluid d-none d-md-block d-xl-none w-100"  alt=""> <!--TABLET-->
+                                <img src="../images/Desktop - 1.png" class="img-fluid d-none d-md-none d-xl-block w-100" alt="">
+                                
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="../images/Mobile2.png" class="d-md-none w-100" alt=""><!--CELULAR-->
+                                <img src="../images/Tablet - 2.png" class="img-fluid d-none d-md-block d-xl-none w-100"  alt="">  <!--TABLET-->
+                                <img src="../images/Desktop - 2.png" class="img-fluid d-none d-md-none d-xl-block w-100" alt=""> 
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="../images/Mobile3.png" class="d-md-none w-100" alt=""><!--CELULAR-->
+                                <img src="../images/Tablet - 3.png" class="img-fluid d-none d-md-block d-xl-none w-100"  alt="">
+                                <!--TABLET-->
+                                <img src="../images/Desktop - 3.png" class="img-fluid d-none d-md-none d-xl-block w-100" alt="">
+                                
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../images/Mobile4.png" class="d-md-none w-100" alt=""><!--CELULAR-->
+                                <img src="../images/Tablet - 4.png" class="img-fluid d-none d-md-block d-xl-none w-100"  alt="">
+                                <!--TABLET-->
+                                <img src="../images/Desktop - 4.png" class="img-fluid d-none d-md-none d-xl-block w-100" alt="">
+                                
+                            </div>
+                       </div> 
+                      
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Próximo</span>
+                            </button>
+                  </div>
+            </section>
+            <!--fim  BANNER CARROUSEL AUTOPLAYING -->
      
            <div id="texto">
 
@@ -69,8 +129,13 @@
         </footer>
     </div>
 
+    <!--POPPER-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+     <!--fim POPPER-->
+
     <!--JAVASCRIPT-->
-    <script>
+    <!-- <script>
         function abrirOpcoes(){
             if (opcoesMobile.style.display=='none'){
                 opcoesMobile.style.display='flex'
@@ -82,7 +147,7 @@
         }
         
 
-    </script>
+    </script> -->
 </body>
 </html>
     
