@@ -11,33 +11,39 @@
 header, footer{
     width: 100%;
     height: 70px;
-    background-color:#0d0dcb;
+    background-color:#343440;
     display: flex;
     font-family: 'Open Sans', sans-serif !important;
     color:#ffc72c !important;
 }
+header a{
+    color:#ffc72c !important;
+}
+
 
 #home{
     width: 100%; 
     display: flex;  
+    padding: 0%;
+    margin: 0%;
 }
 
-.container-fluid{
+/* .container-fluid{
     display: flex;
     justify-content: space-between;
-}
+} */
 
 
-.carousel-inner{
+/* .carousel-inner{
     display: flex;
     background-position:center !important;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 
 #texto{
-    background-color: rgba(255, 255, 255, 0.497);
+    background-color: var(--cinzaGradiente);
     padding: 40px;
     font-family: 'Open Sans', sans-serif ;
     word-spacing: 5px; 

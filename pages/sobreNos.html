@@ -18,20 +18,17 @@
     
 <body>
     <div id="pagina">
-        <header>
-            <!-- MENU NAV -->
-            <nav class="navbar navbar-expand-md">
-                <!-- LOGO -->
-                    <div class="container-fluid d-flex justify-content-between">
-                      <a class="navbar-brand" href="#">
-                        <img src="../images/logoCatPlay.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                        CatPlay
-                      </a>
-                    </div>
-                <!--FIM LOGO -->
-                <div class="container-fluid">
-                 
-        
+      <header>
+        <!-- MENU NAV -->
+        <nav class="navbar navbar-expand-md">
+          <!-- LOGO -->
+              <div class="container-fluid d-flex justify-content-between">
+                <a class="navbar-brand" href="#">
+                  <img src="../images/logoCatPlay.png" alt="Logo" width="36" height="36" class="d-inline-block align-text-top">
+                  CatPlay
+                </a>
+                    <!--FIM LOGO -->
+          
                   <div class="collapse navbar-collapse color" id="navbarSupportedContent">
                     <ul class="navbar-nav  d-flex justify-content-between">
                       <li class="nav-item">
@@ -55,16 +52,18 @@
                       <button class="btn btn-outline-success" type="submit">Pesquisar</button>
                     </form> -->
                   </div>
-                </div>
-              </nav>
-               <!-- FIM MENU NAV -->
+              </div>
+        </nav>
+              
+        <!-- FIM MENU NAV -->
 
 
-            <!--MOBILE-->
-            <div id="menuMobile" onclick="abrirOpcoes()">
-                <img src="../images/menuIcon.svg" alt="icone">
-            </div>
-        </header>
+        <!--MOBILE-->
+        <!-- <div id="menuMobile" onclick="abrirOpcoes()">
+            <img src="../images/menuIcon.svg" alt="icone">
+        </div> -->
+    </header>
+   
         <!--MENU MOBILE-->
             <nav id="opcoesMobile">
                 <ul>
@@ -81,6 +80,22 @@
 
         <main id="home">
 
+            <div id="gridImagem"  class="d-flex">
+              <div id="imagemSobreNos" class="m-4 ">
+                <img src="../images/gato-comendo-tigela.jpg" alt="Gato cinza e branco se alimentando" class="w-100">
+              </div>
+              <div id="texto">
+                <h3>CatPlay - Sobre Nós</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae suscipit ab temporibus quaerat culpa praesentium fugiat officiis, dolore veniam sint eveniet minus perferendis obcaecati debitis nulla cum voluptatem nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta minus saepe quasi inventore fugiat architecto eligendi ipsam aspernatur quibusdam atque et ratione reiciendis, porro facere iure? Maiores eos quia laborum.
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa voluptates vel sapiente vitae eius sint molestias libero aspernatur odit reprehenderit, culpa perferendis doloribus perspiciatis? Alias neque tempore dolorum beatae sit?
+                Voluptatem corrupti ea quam omnis fugit, minima facere libero maiores eaque et officiis ex, vero qui dolores nam iure eos. Reiciendis labore recusandae id eveniet sed similique! Vero, veniam doloremque.
+                Fugiat, necessitatibus dignissimos sequi nam quas voluptas! Voluptatum error odit suscipit eligendi at tenetur vero dicta consequuntur, cupiditate, culpa laudantium ea expedita. Tempora ut expedita asperiores magnam reiciendis aliquid aut.
+                Repellendus inventore autem mollitia ducimus? Beatae nulla adipisci culpa omnis voluptate, cupiditate ea recusandae aut illo deleniti amet tempora enim quasi, sapiente autem aperiam maxime, distinctio repellat laboriosam architecto temporibus?</p>
+              </div>
+
+            </div>
+
         
         </main>
         <footer>
@@ -88,9 +103,7 @@
         </footer>
     </div>
 
-     <!--BOOTSTRAP LINK CDN via jsDelivr, SCRIPT SEMPRE COLOCAR DENTRO DO BODY   -->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-     <!-- fim script BOOTSTRAP LINK CDN via jsDelivr, SCRIPT SEMPRE COLOCAR DENTRO DO BODY   -->
+   
 
     <!--POPPER-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
@@ -98,7 +111,7 @@
      <!--fim POPPER-->
 
     <!--JAVASCRIPT-->
-    <script>
+    <!-- <script>
         function abrirOpcoes(){
             if (opcoesMobile.style.display=='none'){
                 opcoesMobile.style.display='flex'
@@ -110,6 +123,6 @@
         }
         
 
-    </script>
+    </script> -->
 </body>
 </html>
