@@ -30,7 +30,7 @@ header, footer{
 }
 
 body{
-    background-color: #ffc72c;
+    background-color: var(--amarelo);
 }
 main{
     width: 80%;
@@ -101,7 +101,6 @@ a{
     }
 }
 
-
 #opcoesMobile{
     width: 100%;
     padding: 20px 0px;
@@ -143,6 +142,19 @@ h2{
     align-items: center;
     font-size: 50px;
 }
+
+h1,h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px !important;
+    font-weight: bold;
+
+}
+
+h5{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold !important;
+    font-size: 22px !important;
+}
   
 button:active{
     background-color:var(--cinza);
@@ -160,4 +172,26 @@ button:active{
 
 #imagemSobreNos, #texto{
     width: 50%;
+}
+#botao{
+    background-color:var(--amarelo);
+    margin: 10px !important;
+    color: #343440;
+    border-color: transparent !important;
+}
+
+.col,.card{
+    padding: 4px;
+    background-color:#c9c8c880;
+    width:205px;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    border-style: none;
+
+}
+.contato{
+    font-size: 30px !important;
+   
+    
 }

@@ -47,62 +47,130 @@
                                     <a class="nav-link" href="../pages/faleConosco.html">Fale Conosco</a>
                                   </li>
                                 </ul>
-                                <!-- <form class="d-flex" role="search">
-                                  <input class="form-control m-2 d-flex justify-content-between" type="search" placeholder="Pesquisar" aria-label="Search">
-                                  <button class="btn btn-outline-success" type="submit">Pesquisar</button>
-                                </form> -->
+                                <form class="d-flex" role="search">
+                                  <input class="form-control m-2 d-flex justify-content-between" type="search" placeholder="Pesquisar produto" aria-label="Search">
+                                  <button id="botao" class="btn btn-outline-success" type="submit">Pesquisar</button>
+                                </form>
                               </div>
                           </div>
                     </nav>
                           
                     <!-- FIM MENU NAV -->
-
-
-            <!--MOBILE-->
-            <!-- <div id="menuMobile" onclick="abrirOpcoes()"> -->
-                <!-- <img src="../images/menuIcon.svg" alt="icone">
-            </div> -->
         </header>
-        <!-- MENU MOBILE-->
-            <!-- <nav id="opcoesMobile">
-                <ul>
-                    <li><a href="../pages/home.html" target="_blank">Home</a></li>
-                    <li><a href="../pages/cadastroUser.html" target="_blank">Faça seu cadastro</a></li>
-                    <li><a href="#">Loja Online</a></li>
-                    <li><a href="../index.html" target="_blank">Login</a></li>
-                    <li><a href="#">Fale Conosco</a></li>
-                    <li><a href="#">Sobre nós</a></li>
-
-                </ul>
-            </nav> -->
-         <!--FIM MENU MOBILE -->
-
+     
         <main id="home">
-          <div id="produtos" class="container text-center">
-            <div class="row row-cols-2">
+          <div id="produtos" class="container text-center d-flex w-75 gap-5">
+            <!-- ITEM 1 -->
+            <div class="row row-cols-2 gap-5 w-50 m-4"> 
               <div class="col">
-                <img src="../images/produtos/Catnip.png" alt="Frasco de Catnip">
+                <div class="card" style="width: 18rem;">
+                  <img src="../images/produtos/Catnip.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Frasco de Catnip</h5>
+                    <p class="card-text">Frasco de Catnip com 90g, vem 2 no pacote.</p>
+                    <h4>R$30,00</h4>
+                    <!-- BOTÃO MODAL CATNIP  -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#catnipModal">Ver mais</button>
+                  </div>
+                </div>
               </div>
+               <!-- ITEM 2 -->
               <div class="col">
-                <img src="../images/produtos/Tunel.png" alt="Tunel multicolorido para gatos"></div>
-              <div class="col">
-                <img src="../images/produtos/Catização.png" alt="Kit de ambientação para gatos">
+                <div class="card" style="width: 18rem;">
+                  <img src="../images/produtos/Tunel.png" class="card-img-top" alt="Tunel multicolorido para gatos">
+                  <div class="card-body">
+                    <h5 class="card-title">Túnel multicolorido</h5>
+                    <p class="card-text">Túnel multicolorido para gatos.</p>
+                    <h4>R$70,00</h4>
+                    <!-- BOTÃO MODAL TUNEL  -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tunelModal">Ver mais</button>
+                  </div>
+                </div>
               </div>
+               <!-- ITEM 3 -->
               <div class="col">
-                <img src="../images/produtos/Ratinhos.png" alt="Kit de ratinhos e bolinhas de brinquedo">
+                <div class="card" style="width: 18rem;">
+                  <img src="../images/produtos/Catização.png" class="card-img-top" alt="Kit de ambientação para gatos">
+                  <div class="card-body">
+                    <h5 class="card-title">Kit de ambientação</h5>
+                    <p class="card-text">Kit de madeira para ambientação vertical de gatos. 10 peças.</p>
+                    <h4>R$500,00</h4>
+                    <!-- BOTÃO MODAL KIT DE AMBIENTAÇÃO  -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#kitModal">Ver mais</button>
+                  </div>
+                </div>
+              </div>
+             <!-- ITEM 4 -->
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="../images/produtos/Ratinhos.png" class="card-img-top" alt="Kit de ratinhos e bolinhas de brinquedo">
+                  <div class="card-body">
+                    <h5 class="card-title">Kit de ratinhos e bolinhas de brinquedo</h5>
+                    <p class="card-text">Kit de ratinhos e bolinhas para gatos, 8 peças.</p>
+                    <h4>R$20,00</h4>
+                    <!-- BOTÃO MODAL KIT RATINHOS -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ratinhosModal">Ver mais</button>
+                  </div>
+                </div>
+            
               </div>
             </div>
-            <div class="row row-cols-2">
+
+            <div class="row row-cols-2 gap-5 w-50 m-4">
+               <!-- ITEM 5 -->
               <div class="col">
-                <img src="../images/produtos/Catnip.png" alt="Frasco de Catnip">
+                <div class="card" style="width: 18rem;">
+                  <img src="../images/produtos/lagartixas.jpg" class="card-img-top" alt="Lagartixas de borracha">
+                  <div class="card-body">
+                    <h5 class="card-title">Kit com 4 lagartixas de borracha</h5>
+                    <p class="card-text">Kit de lagartixas de borracha, Chalesco</p>
+                    <h4>R$40,00</h4>
+                    <!-- BOTÃO MODAL LAGARTIXAS -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#lagartixasModal">Ver mais</button>
+                  </div>
+                </div>
               </div>
+              <!-- ITEM 6 -->
               <div class="col">
-                <img src="../images/produtos/Tunel.png" alt="Tunel multicolorido para gatos"></div>
-              <div class="col">
-                <img src="../images/produtos/Catização.png" alt="Kit de ambientação para gatos">
+                <div class="card" style="width: 18rem;">
+                  <img src="../images/produtos/brinquedoEspiral.jpg" class="card-img-top" alt="Tunel em espiral para gatos">
+                  <div class="card-body">
+                    <h5 class="card-title">Brinquedo em espiral</h5>
+                    <p class="card-text">Brinquedo em formato de túnel em espiral com penas nas pontas.</p>
+                    <h4>R$40,00</h4>
+                    <!-- BOTÃO MODAL ESPIRAL -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#espiralModal">Ver mais</button>
+                  </div>
+                </div>
               </div>
+               
+              <!-- ITEM 7 -->
+                <div class="col">
+                  <div class="card" style="width: 18rem;">
+                    <img src="../images/produtos/brinquedoEspiral.jpg" class="card-img-top" alt="Tunel em espiral para gatos">
+                    <div class="card-body">
+                      <h5 class="card-title">Brinquedo em espiral</h5>
+                      <p class="card-text">Brinquedo em formato de túnel em espiral com penas nas pontas.</p>
+                      <h4>R$40,00</h4>
+                      <!-- BOTÃO MODAL ESPIRAL -->
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#espiralModal">Ver mais</button>
+                    </div>
+                  </div>
+ 
+              </div>
+              <!-- ITEM 8 -->
               <div class="col">
-                <img src="../images/produtos/Ratinhos.png" alt="Kit de ratinhos e bolinhas de brinquedo">
+                <div class="card" style="width: 18rem;">
+                  <img src="../images/produtos/brinquedoEspiral.jpg" class="card-img-top" alt="Tunel em espiral para gatos">
+                  <div class="card-body">
+                    <h5 class="card-title">Brinquedo em espiral</h5>
+                    <p class="card-text">Brinquedo em formato de túnel em espiral com penas nas pontas.</p>
+                    <h4>R$40,00</h4>
+                    <!-- BOTÃO MODAL ESPIRAL -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#espiralModal">Ver mais</button>
+                  </div>
+                </div>
+                
               </div>
             </div>
           </div>
@@ -114,24 +182,157 @@
         </footer>
     </div>
 
+     <!-- Modal CATNIP -->
+     <div class="modal fade" id="catnipModal" tabindex="-1" aria-labelledby="catnipModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+          <h1 class="modal-title fs-5" id="catnipModalLabel">Catnip Chalesco</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+          <img class="w-100" src="../images/produtos/Catnip.png" alt="Frasco de catnip">
+          <h3 style="color:var(--preto)" class=" m-4">R$30,00</h3>
+          <label for="quantidade">Quantidade do produto:</label>
+          <input type="number" name="" id="quantidade">
+          </div>
+          <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-success">Adicionar ao carrinho</button>
+          </div>
+      </div>
+      </div>
+  </div>
+  <!--  FIM Modal CATNIP-->
+
+  
+  <!-- Modal TUNEL -->
+  <div class="modal fade" id="tunelModal" tabindex="-1" aria-labelledby="tunelModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h1 class="modal-title fs-5" id="tunelModalLabel">Túnel multicolorido 1m </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+        <img class="w-100" src="../images/produtos/Tunel.png" alt="Tunel multicolorido para gatos">
+        <h3 style="color:var(--preto)" class=" m-4">R$70,00</h3>
+        <label for="quantidade">Quantidade do produto:</label>
+        <input type="number" name="" id="quantidade">
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-success">Adicionar ao carrinho</button>
+        </div>
+    </div>
+    </div>
+</div>
+ <!--FIM Modal TUNEL -->
+
+ <!-- Modal KIT -->
+ <div class="modal fade" id="kitModal" tabindex="-1" aria-labelledby="kitModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+      <div class="modal-header">
+
+      <h1 class="modal-title fs-5" id="kitModalLabel">Kit de ambientação de 10 peças</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+      <img class="w-100" src="../images/produtos/Catização.png" alt="Kit de ambientação para gatos">
+      <h3 style="color:var(--preto)" class=" m-4">R$500,00</h3>
+      <label for="quantidade">Quantidade do produto:</label>
+      <input type="number" name="" id="quantidade">
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+      <button type="button" class="btn btn-success">Adicionar ao carrinho</button>
+      </div>
+  </div>
+  </div>
+</div>
+<!--FIM Modal KIT -->
+
+<!-- Modal KIT RATINHOS -->
+<div class="modal fade" id="ratinhosModal" tabindex="-1" aria-labelledby="ratinhosModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+      <div class="modal-header">
+
+      <h1 class="modal-title fs-5" id="ratinhosModalLabel">Kit de ratinhos e bolinhas de brinquedo</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+      <img class="w-100" src="../images/produtos/Ratinhos.png" alt="Kit de ratinhos e bolinhas de brinquedo">
+      <h3 style="color:var(--preto)" class=" m-4">R$20,00</h3>
+      <label for="quantidade">Quantidade do produto:</label>
+      <input type="number" name="" id="quantidade">
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+      <button type="button" class="btn btn-success">Adicionar ao carrinho</button>
+      </div>
+  </div>
+  </div>
+</div>
+<!--FIM Modal KIT RATINHOS -->
+
+<!-- Modal KIT LAGARTIXAS -->
+<div class="modal fade" id="lagartixasModal" tabindex="-1" aria-labelledby="lagartixasModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+      <div class="modal-header">
+
+      <h1 class="modal-title fs-5" id="lagartixasModalLabel">Kit com 4 lagartixas de borracha</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+      <img class="w-100" src="../images/produtos/lagartixas.jpg" alt="Kit com 4 lagartixas de borracha">
+      <h3 style="color:var(--preto)" class=" m-4">R$40,00</h3>
+      <label for="quantidade">Quantidade do produto:</label>
+      <input type="number" name="" id="quantidade">
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+      <button type="button" class="btn btn-success">Adicionar ao carrinho</button>
+      </div>
+  </div>
+  </div>
+</div>
+<!--FIM Modal KIT LAGARTIXAS -->
+
+<!-- Modal KIT ESPIRAL -->
+<div class="modal fade" id="espiralModal" tabindex="-1" aria-labelledby="espiralModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+      <div class="modal-header">
+
+      <h1 class="modal-title fs-5" id="espiralModalLabel">Brinquedo em espiral</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+      <img class="w-100" src="../images/produtos/brinquedoEspiral.jpg" alt="Tunel em espiral para gatos">
+      <h3 style="color:var(--preto)" class=" m-4">R$40,00</h3>
+      <label for="quantidade">Quantidade do produto:</label>
+      <input type="number" name="" id="quantidade">
+      </div>
+      <div class="modal-footer">
+      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+      <button type="button" class="btn btn-success">Adicionar ao carrinho</button>
+      </div>
+  </div>
+  </div>
+</div>
+<!--FIM Modal KIT ESPIRAL -->
+
+
+
+
     <!--POPPER-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
      <!--fim POPPER-->
 
-    <!--JAVASCRIPT-->
-    <!-- <script>
-        function abrirOpcoes(){
-            if (opcoesMobile.style.display=='none'){
-                opcoesMobile.style.display='flex'
-                //Se o menu mobile estiver escondido então mostrar o Icone;/ = atribuição, ==comparação
-            }else{
-                opcoesMobile.style.display='none'
-                //Caso contrário não mostre o Icone.
-            }
-        }
-        
-
-    </script> -->
+ 
 </body>
 </html>
