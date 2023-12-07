@@ -74,7 +74,18 @@ a{
     color:var(--amarelo);
 }   
 
-
+.btnCarrousel{
+    background-color: transparent;
+    width: 50px;
+    height: auto;
+}
+    
+.btnCarrousel:hover{
+    background-color: transparent;
+    width: 50px;
+    animation: none;
+    height: auto;
+}
 /*RESPONSIVIDADE MOBILE*/
 #menuMobile{
     display: none;
@@ -219,16 +230,7 @@ button:hover, #botaoLogin:active{
     border-color: transparent !important;
 }
 
-.col,.card{
-    padding: 4px;
-    background-color:#c9c8c880;
-    width:205px;
-    display: flex;
-    justify-content: center;
-    align-items: top;
-    border-style: none;
 
-}
 .contato{
     font-size: 30px !important;
 
