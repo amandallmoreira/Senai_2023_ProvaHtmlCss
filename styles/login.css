@@ -25,6 +25,11 @@ input{
     background: rgb(148,148,148);
     border: inset; 
 }
+
+#nomeUser, #senhaUser{
+    padding: 20px;
+}
+
 .clique{
     color:rgb(105, 105, 105);
 }
@@ -93,18 +98,6 @@ input::placeholder{
     font-size: 20px;  
     font-weight: bold;
 }
-button{
-    width: 200px;
-    height: 40px;
-    margin: 20px auto;
-    background: #343440;
-    border-radius: 10px;
-    border-style: none;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    color:#ffc72c;
-}
+
 
 /*FIM EFEITOS CSS*/
-

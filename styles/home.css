@@ -32,6 +32,16 @@ header a{
     margin: 0%;
 }
 
+.selecionar{
+    width: 100px;
+    margin-top: 20px;
+}
+.selecionar:hover{
+    width: 120px;
+    margin: 10px;
+    background-color:var(--cinzaEscuro);
+}
+
 /* .container-fluid{
     display: flex;
     justify-content: space-between;

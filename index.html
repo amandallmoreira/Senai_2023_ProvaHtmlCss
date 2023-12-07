@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>CatPlay-Login Usuário</title>
+    <title>CatPlay - Home</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
     <!--BOOTSTRAP LINK CDN via jsDelivr -->
@@ -11,79 +11,134 @@
     <!--fim link BOOTSTRAP LINK CDN via jsDelivr -->
 
     <link rel='stylesheet' type='text/css' media='screen' href='styles/geral.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='styles/login.css'>
-    <link rel='stylesheet' type='text/css' media='screen and (max-width : 768px)' href='styles/@media.css'>    <!--RESPONSIVIDADE-->
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/home.css'>
+
+    <link rel='stylesheet' type='text/css' media='screen and (max-width : 768px)' href='styles/@media.css'>
+
     
-</head>
 <body>
     <div id="pagina">
         <header>
-            <div id="logo">
-                <img src="images/logoCatPlay.png" alt="logo CatPlay" >
-            </div>
-            <nav id="opcoesPc">
-                <ul>
-                    <li><a href="pages/home.html" target="_blank">Home</a></li>
-                    <li><a href="pages/cadastroUser.html" target="_blank">Cadastre-se</a></li>
-                    <li><a href="pages/loja.html">Loja Online</a></li>
-                    <li><a href="index.html" target="_blank">Login</a></li>
-                    <li><a href="pages/faleConosco.html">Fale Conosco</a></li>
-                    <li><a href="pages/sobreNos.html">Sobre nós</a></li>
-                </ul>
+            <!-- MENU NAV -->
+            <nav class="navbar navbar-expand-md">
+              <!-- LOGO -->
+                  <div class="container-fluid d-flex justify-content-between">
+                    <a class="navbar-brand" href="index.html">
+                      <img src="images/logoCatPlay.png" alt="Logo" width="36" height="36" class="d-inline-block align-text-top">
+                      CatPlay
+                    </a>
+                        <!--FIM LOGO -->
+              
+                      <div class="collapse navbar-collapse color" id="navbarSupportedContent">
+                        <ul class="navbar-nav  d-flex justify-content-between">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="pages/loja.html">Loja</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="pages/loginUser.html">Login</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="pages/sobreNos.html">Sobre Nós</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="pages/faleConosco.html">Fale Conosco</a>
+                          </li>
+                        </ul>
+                        <!-- <form class="d-flex" role="search">
+                          <input class="form-control m-2 d-flex justify-content-between" type="search" placeholder="Pesquisar" aria-label="Search">
+                          <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                        </form> -->
+                      </div>
+                  </div>
             </nav>
+                  
+            <!-- FIM MENU NAV -->
+
+
             <!--MOBILE-->
-            <div id="menuMobile" onclick="abrirOpcoes()">
-                <img src="images/menuIcon.svg" alt="icone">
-            </div>
+            <!-- <div id="menuMobile" onclick="abrirOpcoes()">
+                <img src="../images/menuIcon.svg" alt="icone">
+            </div> -->
         </header>
-        <!--MENU MOBILE-->
-            <nav id="opcoesMobile">
-                <ul>
-                    <li><a href="pages/home.html" target="_blank">Home</a></li>
-                    <li><a href="pages/cadastroUser.html" target="_blank">Cadastre-se</a></li>
-                    <li><a href="#">Loja Online</a></li>
-                    <li><a href="index.html" target="_blank">Login</a></li>
-                    <li><a href="#">Fale Conosco</a></li>
-                    <li><a href="#">Sobre nós</a></li>
-                </ul>
-            </nav>
-         <!--FIM MENU MOBILE-->
-         <main>
-            <div id="formulario">
-                <h2>Login usuário</h2>
-                <form>
-                    <label for="nome">Digite o nome do usuário:</label>
-                    <input type="text" id="nome" placeholder="Usuário">
-
-                    <label for="senha">Digite sua senha:</label>
-                    <input type="password" id="senha" placeholder="Digite aqui">
-
-                    <p>Esqueci minha senha! <a class="clique" href="pages/novaSenha.html" target="_blank">Clique aqui!</a></p> 
-                    <p>Não possuo cadastro!
-                    <a class="clique"  href="pages/cadastroUser.html" target="_blank">Fazer cadastro.</a> </p>
-                    
-                    <button type="submit"><p> Enviar</p></button>
-                </form>
-            </div>  
-        </main>      
        
+
+        <main id="home">
+
+            <!-- BANNER CARROUSEL AUTOPLAYING -->
+            <section id="bannerCarrousel" class="container-fluid mx-0 my-0 p-0">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../images/Mobile.png" class="d-md-none w-100" alt=""><!--CELULAR-->
+                                <img src="../images/Tablet - 1.png" class="img-fluid d-none d-md-block d-xl-none w-100"  alt=""> <!--TABLET-->
+                                <img src="../images/Desktop - 1.png" class="img-fluid d-none d-md-none d-xl-block w-100" alt="">
+                                
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="../images/Mobile2.png" class="d-md-none w-100" alt=""><!--CELULAR-->
+                                <img src="../images/Tablet - 2.png" class="img-fluid d-none d-md-block d-xl-none w-100"  alt="">  <!--TABLET-->
+                                <img src="../images/Desktop - 2.png" class="img-fluid d-none d-md-none d-xl-block w-100" alt=""> 
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="../images/Mobile3.png" class="d-md-none w-100" alt=""><!--CELULAR-->
+                                <img src="../images/Tablet - 3.png" class="img-fluid d-none d-md-block d-xl-none w-100"  alt="">
+                                <!--TABLET-->
+                                <img src="../images/Desktop - 3.png" class="img-fluid d-none d-md-none d-xl-block w-100" alt="">
+                                
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../images/Mobile4.png" class="d-md-none w-100" alt=""><!--CELULAR-->
+                                <img src="../images/Tablet - 4.png" class="img-fluid d-none d-md-block d-xl-none w-100"  alt="">
+                                <!--TABLET-->
+                                <img src="../images/Desktop - 4.png" class="img-fluid d-none d-md-none d-xl-block w-100" alt="">
+                                
+                            </div>
+                      
+                      
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Próximo</span>
+                            </button>
+                  
+                  
+                         
+                          </div>
+
+                </div>     
+            </section>
+            <!--fim  BANNER CARROUSEL AUTOPLAYING -->
+     
+           <div id="texto">
+
+            <p>A Cat Play é uma loja de brinquedos de gatos, temos os melhores brinquedos para o seu amigo felino. Afinal, quem não tem aquele gato atentado e cheio de energia? Seja de madrugada ou pela manhã?</p>
+            <p>Aqui na Cat Play nossos brinquedos são desenvolvidos de forma sustentável, somos um pequeno negócio com foco em bem estar animal, por isso nos esforçamos para oferecer a maior diversão para o seu gatinho. </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi magnam repellendus autem, commodi odit sed omnis similique deserunt id, voluptatem perferendis quidem accusantium modi libero. Quos fugiat natus animi delectus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione corporis perspiciatis voluptatibus, at iure doloribus voluptatum accusamus, soluta eaque qui ullam nostrum illo repellendus ad dicta nulla quia architecto. Esse.</p>
+
+           </div>
+                   
+        </main>
         <footer>
             <p>CatPlay - Todos os direitos reservados.</p>
         </footer>
     </div>
 
-    <!--BOOTSTRAP LINK CDN via jsDelivr, SCRIPT SEMPRE COLOCAR DENTRO DO BODY   -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-     <!-- fim script BOOTSTRAP LINK CDN via jsDelivr, SCRIPT SEMPRE COLOCAR DENTRO DO BODY   -->
-
     <!--POPPER-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
      <!--fim POPPER-->
-     <script src="js/script.js"></script>
 
     <!--JAVASCRIPT-->
-    <script>
+    <!-- <script>
         function abrirOpcoes(){
             if (opcoesMobile.style.display=='none'){
                 opcoesMobile.style.display='flex'
@@ -93,7 +148,9 @@
                 //Caso contrário não mostre o Icone.
             }
         }
-   
-    </script>
+        
+
+    </script> -->
 </body>
 </html>
+    

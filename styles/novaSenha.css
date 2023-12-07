@@ -2,14 +2,7 @@
     padding: 0%;
     margin: 0%;
 }
-h3{
-    color:#595959;
-    margin: 50px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 35px;
-}
+
 
 #redefinirSenha{
     display: flex;
@@ -23,4 +16,11 @@ input{
     justify-content: center;
     align-items: center;
     margin: 15px;
+}
+
+#tituloRedefinirSenha{
+    margin:40px;
+}
+#redefinirSenha{
+    margin: 20px;
 }
