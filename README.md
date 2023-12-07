@@ -7,11 +7,11 @@
 
 🟢-Deverá ser utilizado apenas HTML, Css e Bootstrap ( A parte de JavaScript do Bootstrap e as funções desenvolvidas em sala estão inclusas no uso, apenas sendo essas as exceções ). A utilização de quaisquer outras tecnologias ou linguagens será desconsiderado da avaliação!
 
-🟡- Deverá ser desenvolvido 3 páginas, sendo elas o home ( Página principal), sobre nós e um catálogo de produtos dessa loja!
+🟢- Deverá ser desenvolvido 3 páginas, sendo elas o home ( Página principal), sobre nós e um catálogo de produtos dessa loja!
 
 🟢- Deverá ser instalado e utilizado o Bootstrap. 
 
-🟡-Os componentes obrigatórios serão um carrousel e um modal, dos quais deverão estar presente em ao menos em uma das
+🟢-Os componentes obrigatórios serão um carrousel e um modal, dos quais deverão estar presente em ao menos em uma das
 páginas, sendo o contexto aplicado a escolha do aluno ( Sendo como banner, uma galeria, propaganda ou mensagens de navegações, popups etc ).
 
 🟢- O tema deverá ser seguido da avaliação anterior ou reformulando o anterior no tema escolhido atualmente caso o aluno decida mudar em sua terceira parte!
