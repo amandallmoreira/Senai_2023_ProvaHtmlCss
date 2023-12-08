@@ -11,13 +11,11 @@
     align-items: center;
 
 }
-
-input{
-    justify-content: center;
-    align-items: center;
+.novaSenha{
     margin: 15px;
-}
+    padding: 20px;
 
+}
 #tituloRedefinirSenha{
     margin:40px;
 }

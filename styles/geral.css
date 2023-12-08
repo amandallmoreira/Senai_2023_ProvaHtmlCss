@@ -189,13 +189,15 @@ h5{
 
 button, #botaoLogin{
     width: 200px;
-    height: 40px;
+    height: auto;
+    margin-top: 20px;
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 5px;
     display: flex;
-    flex-direction: row;
+    align-content: center;
     align-items: center;
     justify-content: center;
+    justify-items: center;
     background: #343440;
     border-radius: 10px;
     border-style: none;

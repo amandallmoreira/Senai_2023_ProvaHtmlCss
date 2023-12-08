@@ -15,15 +15,23 @@ form{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:15px;
+    
+}
+
+label{
+    margin-top: 10px;
 }
 input{
     width: 320px;
     height: 30px;
     border-radius: 30px;
-    padding: 5px;
+    padding: 20px;
     background: rgb(148,148,148);
     border: inset; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 #nomeUser, #senhaUser{
@@ -35,7 +43,7 @@ input{
 }
 #genero{
     width: 300px;
-    height: 100px;
+    height: auto;
     display: flex;
     padding: 20px;
     border-style: inset;
@@ -50,12 +58,12 @@ input{
 
 .lado{
     width: 50%;
-    height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align:center;
-    gap:10px;
+    gap:20px;
 }
 
 #titulo{
