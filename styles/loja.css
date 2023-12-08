@@ -1,50 +1,49 @@
-#botaoCarrinho{
-    background-color: transparent;
-    padding: 10px;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0%;
+#botaoCarrinho {
+  background-color: transparent;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0%;
 }
-ul{
-    margin-bottom: 0%;
+ul {
+  margin-bottom: 0%;
 }
-#botaoCarrinho:hover{
-    background-color: transparent;
-    color: red;
-
-}
-
-.card{
-    height: 600px;
-}
-#qtdProduto{
-    width: 100px;
-    margin: 10px;
-}
-.carrinhoAncora{
-    color: var(--cinzaEscuro);
-    font-size: medium;
-    display: flex;
-    justify-content: center;
-    padding: 3px;
+#botaoCarrinho:hover {
+  background-color: transparent;
+  color: red;
 }
 
-.carrinhoAncora:hover{
-    color:red;
+.card {
+  height: 600px;
+}
+#qtdProduto {
+  width: 100px;
+  margin: 10px;
+}
+.carrinhoAncora {
+  color: var(--cinzaEscuro);
+  font-size: medium;
+  display: flex;
+  justify-content: center;
+  padding: 3px;
 }
 
-.col,.card{
-    padding: 4px;
-    background-color: var(--cinza);
-    width:205px;
-    display: flex;
-    justify-content: center;
-    align-items: top;
-    border-style: none;
-    border-radius: 10px;
-    overflow: hidden;
+.carrinhoAncora:hover {
+  color: red;
+}
 
+.col,
+.card {
+  padding: 4px;
+  background-color: var(--cinza);
+  width: 205px;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  border-style: none;
+  border-radius: 10px;
+  overflow: hidden;
 }

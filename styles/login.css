@@ -1,111 +1,110 @@
-*{
-    padding: 0%;
-    margin: 0%;
+* {
+  padding: 0%;
+  margin: 0%;
 }
 
-#formulario{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 15pt;
+#formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15pt;
 }
-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-label{
-    margin-top: 10px;
-}
-input{
-    width: 320px;
-    height: 30px;
-    border-radius: 30px;
-    padding: 20px;
-    background: rgb(148,148,148);
-    border: inset; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-#nomeUser, #senhaUser{
-    padding: 20px;
+label {
+  margin-top: 10px;
+}
+input {
+  width: 320px;
+  height: 30px;
+  border-radius: 30px;
+  padding: 20px;
+  background: rgb(148, 148, 148);
+  border: inset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.clique{
-    color:rgb(105, 105, 105);
-}
-#genero{
-    width: 300px;
-    height: auto;
-    display: flex;
-    padding: 20px;
-    border-style: inset;
-    border-radius: 20px;
-
+#nomeUser,
+#senhaUser {
+  padding: 20px;
 }
 
-.caixa{
-    width: 100%;
-    
+.clique {
+  color: rgb(105, 105, 105);
+}
+#genero {
+  width: 300px;
+  height: auto;
+  display: flex;
+  padding: 20px;
+  border-style: inset;
+  border-radius: 20px;
 }
 
-.lado{
-    width: 50%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align:center;
-    gap:20px;
+.caixa {
+  width: 100%;
 }
 
-#titulo{
-    justify-content: center;
-    text-align: center;
-    padding-bottom: 25px;
-}
-select{
-    width: 320px;
-    height: 40px;
-    border-radius: 30px;
-    padding: 5px;
-    background: rgb(148,148,148);
-    border: inset; 
+.lado {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
 }
 
-option{
-    text-align: center;
-    font-size: 15pt;
+#titulo {
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 25px;
+}
+select {
+  width: 320px;
+  height: 40px;
+  border-radius: 30px;
+  padding: 5px;
+  background: rgb(148, 148, 148);
+  border: inset;
+}
 
+option {
+  text-align: center;
+  font-size: 15pt;
 }
 
 /*EFEITOS CSS*/
-input:hover{
-    transition: 0,5s;
-    background: linear-gradient(180deg, rgba(148,148,148,0.44729344729344733) 0%, rgba(255,255,255,1) 100%);
+input:hover {
+  transition: 0, 5s;
+  background: linear-gradient(
+    180deg,
+    rgba(148, 148, 148, 0.44729344729344733) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
-input:focus:not(.caixa){  /*:not(.caixa) -> elimina a classe caixa do efeito focus*/
-    /*: abre uma pseudo classe*/
-    width: 350px;
-    height: 40px;
-    background-color:#dfdfdf;
-    transition: 1s;
-    animation: cor 5s infinite; 
-    
+input:focus:not(.caixa) {
+  /*:not(.caixa) -> elimina a classe caixa do efeito focus*/
+  /*: abre uma pseudo classe*/
+  width: 350px;
+  height: 40px;
+  background-color: #dfdfdf;
+  transition: 1s;
+  animation: cor 5s infinite;
 }
-input::placeholder{
-    text-align: center;
-    color:rgb(105, 105, 105);
-    font-size: 20px;  
-    font-weight: bold;
+input::placeholder {
+  text-align: center;
+  color: rgb(105, 105, 105);
+  font-size: 20px;
+  font-weight: bold;
 }
-
 
 /*FIM EFEITOS CSS*/

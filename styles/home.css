@@ -1,52 +1,51 @@
-*{
-    padding: 0%;
-    margin: 0%;
+* {
+  padding: 0%;
+  margin: 0%;
 }
-#pagina{
-    background-color:#ffc72c;
+#pagina {
+  background-color: #ffc72c;
 }
-#pagina{
-    width: 100%;
-    display: flex;
-    flex-direction: column ;
-    align-items: center;
-    font-family: 'Open Sans', sans-serif;  
+#pagina {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
 }
-header, footer{
-    width: 100%;
-    height: 70px;
-    background-color:#343440;
-    display: flex;
-    font-family: 'Open Sans', sans-serif !important;
-    color:#ffc72c !important;
+header,
+footer {
+  width: 100%;
+  height: 70px;
+  background-color: #343440;
+  display: flex;
+  font-family: "Open Sans", sans-serif !important;
+  color: #ffc72c !important;
 }
-header a{
-    color:#ffc72c !important;
-}
-
-
-#home{
-    width: 100%; 
-    display: flex;  
-    padding: 0%;
-    margin: 0%;
+header a {
+  color: #ffc72c !important;
 }
 
-.selecionar{
-    width: 100px;
-    margin-top: 20px;
+#home {
+  width: 100%;
+  display: flex;
+  padding: 0%;
+  margin: 0%;
 }
-.selecionar:hover{
-    width: 120px;
-    margin: 10px;
-    background-color:var(--cinzaEscuro);
+
+.selecionar {
+  width: 100px;
+  margin-top: 20px;
+}
+.selecionar:hover {
+  width: 120px;
+  margin: 10px;
+  background-color: var(--cinzaEscuro);
 }
 
 /* .container-fluid{
     display: flex;
     justify-content: space-between;
 } */
-
 
 /* .carousel-inner{
     display: flex;
@@ -55,26 +54,24 @@ header a{
     background-size: cover;
 } */
 
-
-#texto{
-    background-color: var(--cinzaGradiente);
-    padding: 40px;
-    font-family: 'Open Sans', sans-serif ;
-    word-spacing: 5px; 
-    margin: 20px;
+#texto {
+  background-color: var(--cinzaGradiente);
+  padding: 40px;
+  font-family: "Open Sans", sans-serif;
+  word-spacing: 5px;
+  margin: 20px;
 }
-p{
-    margin: 10px;
-    font-size: 20px; 
+p {
+  margin: 10px;
+  font-size: 20px;
 }
-main{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    gap:20px;
+main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap: 20px;
 }
-#opcao{
-    width: 80%;
+#opcao {
+  width: 80%;
 }
-

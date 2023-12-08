@@ -1,24 +1,21 @@
-*{
-    padding: 0%;
-    margin: 0%;
+* {
+  padding: 0%;
+  margin: 0%;
 }
 
-
-#redefinirSenha{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+#redefinirSenha {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.novaSenha{
-    margin: 15px;
-    padding: 20px;
-
+.novaSenha {
+  margin: 15px;
+  padding: 20px;
 }
-#tituloRedefinirSenha{
-    margin:40px;
+#tituloRedefinirSenha {
+  margin: 40px;
 }
-#redefinirSenha{
-    margin: 20px;
+#redefinirSenha {
+  margin: 20px;
 }
