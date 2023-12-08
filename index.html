@@ -12,7 +12,6 @@
 
     <link rel='stylesheet' type='text/css' media='screen' href='styles/geral.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='styles/home.css'>
-
     <link rel='stylesheet' type='text/css' media='screen and (max-width : 768px)' href='styles/@media.css'>
 
     
@@ -27,7 +26,8 @@
                       <img src="images/logoCatPlay.png" alt="Logo" width="36" height="36" class="d-inline-block align-text-top">
                       CatPlay
                     </a>
-                        <!--FIM LOGO -->
+                  </div>
+                  <!--FIM LOGO -->
               
                       <div class="collapse navbar-collapse color" id="navbarSupportedContent">
                         <ul class="navbar-nav  d-flex justify-content-between">
@@ -47,23 +47,35 @@
                             <a class="nav-link" href="pages/faleConosco.html">Fale Conosco</a>
                           </li>
                         </ul>
-                        <!-- <form class="d-flex" role="search">
-                          <input class="form-control m-2 d-flex justify-content-between" type="search" placeholder="Pesquisar" aria-label="Search">
-                          <button class="btn btn-outline-success" type="submit">Pesquisar</button>
-                        </form> -->
+                        
                       </div>
-                  </div>
+                 
             </nav>
                   
             <!-- FIM MENU NAV -->
 
 
             <!--MOBILE-->
-            <!-- <div id="menuMobile" onclick="abrirOpcoes()">
+            <div id="menuMobile" onclick="abrirOpcoes()">
                 <img src="../images/menuIcon.svg" alt="icone">
-            </div> -->
+            </div>
         </header>
-       
+            <!--MENU MOBILE-->
+            <nav id="opcoesMobile">
+              <ul>
+                <li><a href="../index.html" target="_blank">Home</a></li>
+                <li><a href="cadastroUser.html" target="_blank">Faça seu cadastro</a></li>
+                <li><a href="loja.html">Loja Online</a></li>
+                <li><a href="loginUser.html" target="_blank">Login</a></li>
+                <li><a href="faleConosco.html">Fale Conosco</a></li>
+                <li><a href="sobreNos.html">Sobre nós</a></li>
+                <li>
+                  <a href="carrinho.html">Seu Carrinho</a>
+                </li>
+
+              </ul>
+            </nav>
+            <!--FIM MENU MOBILE-->
 
         <main id="home">
 
@@ -136,21 +148,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
      <!--fim POPPER-->
+     <script src="../js/jquery-3.7.1.js"></script>
+     <script src="../js/script1.js"></script>
 
-    <!--JAVASCRIPT-->
-    <!-- <script>
-        function abrirOpcoes(){
-            if (opcoesMobile.style.display=='none'){
-                opcoesMobile.style.display='flex'
-                //Se o menu mobile estiver escondido então mostrar o Icone;/ = atribuição, ==comparação
-            }else{
-                opcoesMobile.style.display='none'
-                //Caso contrário não mostre o Icone.
-            }
-        }
-        
-
-    </script> -->
+   
 </body>
 </html>
     

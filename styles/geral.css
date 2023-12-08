@@ -80,6 +80,9 @@ a {
     font-family: 'Open Sans', sans-serif;
     color: var(--amarelo);
 }
+.nav-link, .navbar-brand{
+    color:var(--amarelo)
+}
 
 .btnCarrousel {
     background-color: transparent;
@@ -196,7 +199,8 @@ h5 {
 }
 
 button,
-#botaoLogin {
+#botaoLogin,
+.btnCarrinhoPerfil{
     width: 200px;
     height: auto;
     margin-top: 20px;
@@ -218,13 +222,13 @@ button,
 
 
 button:active,
-#botaoLogin:active {
+#botaoLogin:active,{
     background-color: var(--cinza);
-    color: red;
+    color:red;
 }
 
-button:hover,
-#botaoLogin:active {
+button:hover,.btnCarrinhoPerfil:hover,
+#botaoLogin:hover {
     width: 250px;
     height: 50px;
     background-color: black;

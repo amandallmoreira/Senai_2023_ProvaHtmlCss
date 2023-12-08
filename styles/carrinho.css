@@ -1,0 +1,12 @@
+.card{
+    margin: 20px;
+    
+}
+#conteudoCarrinho{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+#colunasCarrinho{
+    margin: 20px;
+}

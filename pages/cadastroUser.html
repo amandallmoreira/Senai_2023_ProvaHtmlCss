@@ -110,10 +110,10 @@
           </label>
           <input type="password" id="senhanov" name="senhanov" placeholder="Digite a senha novamente" />
 
-          <label for="name">
+          <label for="telefone">
             <p>Nº de telefone:</p>
           </label>
-          <input type="tel" id="name" name="phone" placeholder="Telefone principal" />
+          <input type="tel" id="telefone" name="phone" placeholder="Telefone principal" />
 
           <label for="endereco">
             <p>Endereço:</p>
@@ -125,10 +125,10 @@
           </label>
           <input type="number" name="zipCode" value="cep" id="CEP" placeholder="CEP" />
 
-          <label for="estado">
+          <label for="estado" id="estado">
             <p>Estado onde mora:</p>
           </label>
-          <select name="localMoradia">
+          <select name="localMoradia" id="estado">
             <option value="Acre">Acre (AC)</option>
             <option value="Alagoas">Alagoas(AL)</option>
             <option value="Amapá">Amapá(AP)</option>
@@ -186,7 +186,8 @@
           <!--fim FORMULARIO-->
 
           <!--BOTÃO-->
-          <button type="button">Enviar</button>
+          <button type="button" id="btnEnviar">Enviar</button>
+          <span id="msgCadastro"></span>
           <!--Fim BOTÃO-->
         </form>
       </div>
@@ -206,5 +207,7 @@
   <!--fim POPPER-->
   <script src="../js/jquery-3.7.1.js"></script>
   <script src="../js/script1.js"></script>
+  <script src="../js/script2.js"></script>
+
 
 </html>

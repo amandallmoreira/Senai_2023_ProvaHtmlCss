@@ -19,6 +19,10 @@ ul {
 .card {
   height: 600px;
 }
+.card-img-top{
+  border-radius: 5px;
+  overflow: hidden;
+}
 #qtdProduto {
   width: 100px;
   margin: 10px;
