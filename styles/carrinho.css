@@ -10,3 +10,12 @@
 #colunasCarrinho{
     margin: 20px;
 }
+#pedidoFinal{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    padding: 50px;
+}
+.hoverA:hover{
+    font-size: x-large;
+  }

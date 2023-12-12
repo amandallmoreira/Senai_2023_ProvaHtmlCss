@@ -28,7 +28,6 @@ ul {
   margin: 10px;
 }
 .carrinhoAncora {
-  color: var(--cinzaEscuro);
   font-size: medium;
   display: flex;
   justify-content: center;
@@ -36,7 +35,7 @@ ul {
 }
 
 .carrinhoAncora:hover {
-  color: red;
+  font-size: larger;
 }
 
 .col,
@@ -50,4 +49,7 @@ ul {
   border-style: none;
   border-radius: 10px;
   overflow: hidden;
+}
+.hoverA:hover{
+  font-size: larger;
 }

@@ -61,8 +61,7 @@
             <ul>
               <li>
                 <!-- BOTÃO CARRINHO -->
-                <button type="button" id="botaoCarrinho" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                  aria-controls="offcanvasRight">
+                <button type="button" id="botaoCarrinho" class="m-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                   <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-cart4"
                     viewBox="0 0 16 16">
                     <path
@@ -109,17 +108,17 @@
         </div>
         <div class="offcanvas-body" id="produtoCarrinho">
           <!-- CARD -->
-          <div class="card" style="width:20rem; height: 15rem;">
+          <div class="card" style="width:auto; height: 15rem;">
             <div class="card-body">
               <h5 class="card-title">Frasco de Catnip</h5>
               <h6 class="card-subtitle mb-2 text-body-secondary">2 unidades, 90g</h6>
               <label for="number">Quantidade</label>
               <input type="number" id="qtdProduto">
-              <a href="#" class="card-link carrinhoAncora">Remover do Carrinho</a>
-              <a href="#" class="card-link carrinhoAncora">Fechar Compra</a>
+              <a href="#" class="card-link text-danger carrinhoAncora">Remover do Carrinho</a> 
+              <a href="carrinho.html" class="card-link text-success carrinhoAncora ">Fechar Compra</a>
             </div>
           </div>
-          <a class="nav-link" href="carrinho.html">Seu Carrinho</a>
+          <a class="nav-link text-dark d-flex justify-content-end hoverA " href="carrinho.html">Seu Carrinho</a>
         </div>
       </div>
 
