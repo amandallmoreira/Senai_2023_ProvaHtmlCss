@@ -23,7 +23,7 @@
      -O design/tema do projeto ficará a critério do aluno ( tendo em nota que esse tema deverá ser seguido pelas outras avaliações, mudanças de tema em etapas futuras ocasionarão também a atualização das partes anteriores). ----> CATPLAY
      -Deverá ser utilizado apenas Html, css, Js (apenas para o botão de menu )e arquivos adicionais (Imagens,videos, audios etc..), quaisquer outros elementos que fogem a regra serão desconsiderados.
      
-🟡- APLICAÇÃO JQUERY (PROVA PT3): 
+🟢 - APLICAÇÃO JQUERY (PROVA PT3): 
      Os alunos deverão desenvolver as suas últimas 2 páginas,no total tendo ao menos 8 páginas o projeto, sendo totalmente livre e utilizando  todos os conhecimentos adquiridos durante o curso, tendo as seguintes regras de avaliação:
      - Nessas 2 últimas páginas, uma delas será o nosso carrinho/pagamento dos produtos, as outras serão a critério do aluno, o conteúdo deverá estar dentro do tema escolhido, tendo assim um projeto com 8 páginas ao todo
      - Em pelo menos uma página, deverá ter ao menos um script de Javascript, a critério do aluno e um elemento com efeito slide ou dropdown
