@@ -19,7 +19,7 @@ ul {
 .card {
   height: 600px;
 }
-.card-img-top{
+.card-img-top {
   border-radius: 5px;
   overflow: hidden;
 }
@@ -50,6 +50,6 @@ ul {
   border-radius: 10px;
   overflow: hidden;
 }
-.hoverA:hover{
+.hoverA:hover {
   font-size: larger;
 }

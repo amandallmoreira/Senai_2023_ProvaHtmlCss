@@ -1,21 +1,20 @@
-.card{
-    margin: 20px;
-    
+.card {
+  margin: 20px;
 }
-#conteudoCarrinho{
-    display: flex;
-    align-items: center;
-    align-content: center;
+#conteudoCarrinho {
+  display: flex;
+  align-items: center;
+  align-content: center;
 }
-#colunasCarrinho{
-    margin: 20px;
+#colunasCarrinho {
+  margin: 20px;
 }
-#pedidoFinal{
-    display: flex;
-    flex-direction: column;
-    gap:5px;
-    padding: 50px;
+#pedidoFinal {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 50px;
 }
-.hoverA:hover{
-    font-size: x-large;
-  }
+.hoverA:hover {
+  font-size: x-large;
+}
